@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 final class ScrumTimer: ObservableObject {
-    struct Speaker: Identifiable {
+    struct Speaker: Identifiable, Hashable {
         let name: String
         var isCompleted: Bool
         let id: UUID = UUID()
